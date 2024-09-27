@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 3: Format Date as MM/DD/YYYY
+function formatDateMMDDYYYY(dateStr) {
+  let date = new Date(dateStr);       
+  let mm = String(date.getMonth() + 1).padStart(2, '0');  
+  let dd = String(date.getDate()).padStart(2, '0');       
+  let yyyy = date.getFullYear();                        
+  return `${mm}/${dd}/${yyyy}`;                          
+}
+
+// Example usage:
+console.log("Task 3: Formatted Date (MM/DD/YYYY):", formatDateMMDDYYYY("2024-08-28"));
+
+    </script>
+</body>
+</html>

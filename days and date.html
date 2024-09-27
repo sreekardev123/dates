@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+        // Task 2: Add Days to Date
+function addDaysToDate(dateStr, days) {
+    let date = new Date(dateStr);       
+    date.setDate(date.getDate() + days); 
+    return date.toISOString().split('T')[0];  
+  }
+  
+  // Example usage:
+  console.log("Task 2: New Date after Adding Days:", addDaysToDate("2024-09-27", 3));
+    </script>
+    
+</body>
+</html>
